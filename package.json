@@ -1,0 +1,19 @@
+{
+  "name": "sandraweidenthal_3_08072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiritF0rest/SandraWeidenthal_3_08072021.git"
+  },
+  "author": "SpiritF0rest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpiritF0rest/SandraWeidenthal_3_08072021/issues"
+  },
+  "homepage": "https://github.com/SpiritF0rest/SandraWeidenthal_3_08072021#readme"
+}

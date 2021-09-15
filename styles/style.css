@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.header__menu a {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.4rem;
+}
+
+footer {
+  color: white;
+  background-color: #363636;
+  padding: 1.5rem;
+}
+footer h2 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+footer ul a {
+  color: white;
+  font-weight: 500;
+}
+footer ul a:visited {
+  color: white;
+}
+footer ul i {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.home-btn__heart {
+  position: absolute;
+  bottom: 2rem;
+  right: 1.4rem;
+}
+
+.form__city-search {
+  background-color: #e6e6e6;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 2px 5px #bfbfbf;
+  color: #333333;
+}
+.form__city-search label {
+  margin-right: 1rem;
+}
+.form__city-search input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  display: block;
+  width: 8rem;
+}
+
+.main__description {
+  background-color: whitesmoke;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+}
+.main__description p {
+  font-size: 1.1rem;
+}
+
+.main__description h2, .main__description p {
+  margin: 0 0 1rem 0;
+}
+
+.restaurants__anchor {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  padding: 1rem 1.2rem;
+  border-radius: 2rem 2rem;
+  box-shadow: 1px 4px 5px #bfbfbf;
+  color: white;
+  font-weight: 500;
+  display: block;
+  max-width: max-content;
+  margin: 2rem auto 1rem auto;
+}
+.restaurants__anchor:visited {
+  color: white;
+}
+
+.main__functioning {
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+.main__functioning h2 {
+  margin: 1.5rem 0 1.8rem 0;
+}
+
+.main__functioning ol {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.4rem;
+  padding: 0;
+}
+
+.main__functioning li {
+  padding: 1.8rem 1.3rem 1.6rem 1.3rem;
+  margin-left: 0.7rem;
+  background-color: whitesmoke;
+  border-radius: 1.5rem 1.5rem;
+  box-shadow: 1px 4px 9px #d9d9d9;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+}
+.main__functioning li i {
+  color: #666666;
+  font-size: 1.3rem;
+  padding: 0 1.5rem 0 0.8rem;
+}
+
+.list-style__number {
+  position: absolute;
+  left: -0.8rem;
+  bottom: 1.4rem;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem 0.1rem 0.5rem;
+  border-radius: 50%;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  background-color: whitesmoke;
+}
+.restaurants h2 {
+  margin: 0 0 1rem 0;
+}
+.restaurants__showcase {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+.restaurants__new {
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 500;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 2px 2px;
+}
+
+.restaurants__new p {
+  margin: 0;
+}
+
+.restaurants_card {
+  border-radius: 1rem 1rem;
+  background-color: white;
+  box-shadow: 4px 4px 9px #dedede;
+  position: relative;
+}
+.restaurants_card img {
+  object-fit: cover;
+  height: 11rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0/1rem 1rem 0 0;
+}
+
+.restaurants__description {
+  padding: 0.5rem 0 1rem 0.8rem;
+}
+.restaurants__description h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.restaurants__description h3, .restaurants__description p {
+  margin: 0.3rem 0 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */
