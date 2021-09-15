@@ -1,0 +1,12 @@
+h1 {
+    font-family: $font-special;
+    font-size: $font-xlarge;
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+.header__menu a {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.4rem;
+}
