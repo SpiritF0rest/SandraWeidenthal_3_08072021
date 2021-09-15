@@ -1,0 +1,29 @@
+footer {
+    color: $color-base;
+    background-color: darken($color-base, 79%);
+    padding: 1.5rem;
+    & h2 {
+        font-family: $font-special;
+        font-size: $font-normal;
+        font-weight: normal;
+        margin: 0;
+    }  
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    & li {
+        margin-bottom: 0.5rem;
+    }
+    & a {
+        color: $color-base;
+        font-weight: 500;
+    }
+    & a:visited {
+        color: $color-base;
+    }
+    & i {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+}
