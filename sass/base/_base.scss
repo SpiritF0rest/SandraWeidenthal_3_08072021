@@ -1,0 +1,19 @@
+body{
+    color: $color-text;
+    font-family: $font-basic;
+    font-size: $font-normal;
+    font-weight: 300; 
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+    &:visited {
+        color: $color-text;
+    }
+}
+h2 {
+    font-size: $font-large;
+    font-weight: 700;
+}
