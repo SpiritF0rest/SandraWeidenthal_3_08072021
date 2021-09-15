@@ -1,0 +1,5 @@
+// main background color in site
+
+@mixin primary-background-color {
+    background-color: darken($color-base, 4%);
+}
