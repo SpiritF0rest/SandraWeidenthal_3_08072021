@@ -34,17 +34,11 @@
 .main__description h2, .main__description p {
     margin: 0 0 1rem 0;
 }
-.restaurants__anchor {
-    background: linear-gradient(175deg, $color-secondary, $color-primary);
-    padding: 1rem 1.2rem;
-    border-radius: 2rem 2rem;
-    box-shadow: 1px 4px 5px darken($color-base, 25%);
-    color: $color-base;
-    font-weight: 500;
+.restaurants-btn__anchor {
     display: block;
     max-width: max-content;
     margin: 2rem auto 1rem auto;
-
+    padding: 1rem 1.2rem;
     &:visited {
         color: $color-base;
     }
