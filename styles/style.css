@@ -72,6 +72,14 @@ footer ul i {
   right: 1.4rem;
 }
 
+.restaurants-btn {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-radius: 2rem 2rem;
+  box-shadow: 1px 4px 5px #bfbfbf;
+  color: white;
+  font-weight: 500;
+}
+
 .form__city-search {
   background-color: #e6e6e6;
   padding: 1rem 0;
@@ -106,18 +114,13 @@ footer ul i {
   margin: 0 0 1rem 0;
 }
 
-.restaurants__anchor {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
-  padding: 1rem 1.2rem;
-  border-radius: 2rem 2rem;
-  box-shadow: 1px 4px 5px #bfbfbf;
-  color: white;
-  font-weight: 500;
+.restaurants-btn__anchor {
   display: block;
   max-width: max-content;
   margin: 2rem auto 1rem auto;
+  padding: 1rem 1.2rem;
 }
-.restaurants__anchor:visited {
+.restaurants-btn__anchor:visited {
   color: white;
 }
 
@@ -216,6 +219,81 @@ footer ul i {
 
 .restaurants__description h3, .restaurants__description p {
   margin: 0.3rem 0 0 0;
+}
+
+.menu__main-img img {
+  height: 16.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu__main-block {
+  border-radius: 2.5rem 2.5rem 0 0/2.5rem 2.5rem 0 0;
+  position: relative;
+  margin-top: -3rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+.menu__main-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__main-h2 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 1rem 0 0 0;
+}
+
+.menu__main-block h3 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.dishes__block {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.dishes__unit-block {
+  background-color: white;
+  border-radius: 1rem 1rem;
+  box-shadow: 1px 4px 9px #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+.dishes__unit-block > div {
+  width: 100%;
+}
+.dishes__unit-block h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+.dishes__unit-block p {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.2rem 0;
+}
+.dishes__unit-block span {
+  font-weight: 500;
+}
+
+.restaurants-btn__order {
+  border: none;
+  display: block;
+  margin: 3rem auto 4rem auto;
+  padding: 1rem 3rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
