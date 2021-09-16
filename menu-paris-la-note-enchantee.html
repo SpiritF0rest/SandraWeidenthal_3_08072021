@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,113 +8,122 @@
     <title>Oh my food</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
 
-     <!-- Header with the name of the site and back home page button -->
-     <header class="header__menu">
+    <!-- Header with the name of the site and back home page button -->
+    <header class="header__menu">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
-    
+
     <!-- Main -->
     <main>
-        <div>
-            <img src="images/la-note-enchantee-stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat avec produits de la mer" />
+        <div class="menu__main-img">
+            <img src="images/la-note-enchantee-stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="photo d'un plat avec produits de la mer" />
         </div>
-        <div>
-            <h2>La note enchantée</h2>
-            <button type="button"><i class="fas fa-heart"></i></button>
+        <div class="menu__main-block">
+            <div class="menu__main-title">
+                <h2 class="menu__main-h2">La note enchantée</h2>
+                <button type="button"><i class="fas fa-heart"></i></button>
+            </div>
+
+            <!-- Choice of entrees -->
+            <section>
+                <h3>Entrées</h3>
+                <div class="dishes__block">
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Ravioles de foie gras</h4>
+                            <p>Accompagnés de leur crème à la truffe <span>25€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Caviar osciètre</h4>
+                            <p>Sur blini à la farine de blé noir <span>35€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Homard et espuma de potiron</h4>
+                            <p>Mariné aux zestes d'orange <span>20€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <p>Confiture de figue et pain toasté <span>35€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Choice of dishes -->
+            <section>
+                <h3>Plats</h3>
+                <div class="dishes__block">
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Noix de coquilles Saint-Jacques</h4>
+                            <p>Sur lit de purée de céleri-rave <span>40€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Langoustine poêlée</h4>
+                            <p>Purée de patate douce <span>35€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Mijoté de queue de bœuf</h4>
+                            <p>Et riz sauvage aux zests de citron <span>44€</span></p>
+
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Choice of desserts -->
+            <section>
+                <h3>Desserts</h3>
+                <div class="dishes__block">
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Macaron noisette et chocolat</h4>
+                            <p>Glace au caramel brun et sel de Guérande <span>18€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Baba au rhum revisité</h4>
+                            <p>Avec son coulis de citron <span>22€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                    <div class="dishes__unit-block">
+                        <div>
+                            <h4>Tarte de citron meringuée</h4>
+                            <p>Déstructurée <span>23€</span></p>
+                        </div>
+                        <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Button to order -->
+            <button type="button" class="restaurants-btn restaurants-btn__order"> Commander </button>
         </div>
-
-        <!-- Choice of entrees -->
-        <section>
-            <h3>Entrées</h3>
-            <div>
-                <div>
-                    <h4>Ravioles de foie gras</h4>
-                    <p>Accompagnés de leur crème à la truffe <span>25€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Caviar osciètre</h4>
-                    <p>Sur blini à la farine de blé noir <span>35€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Homard et espuma de potiron</h4>
-                    <p>Mariné aux zestes d'orange <span>20€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Foie gras de canard cuit entier</h4>
-                    <p>Confiture de figue et pain toasté <span>35€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-        </section>
-
-        <!-- Choice of dishes -->
-        <section>
-            <h3>Plats</h3>
-            <div>
-                <div>
-                    <h4>Noix de coquilles Saint-Jacques</h4>
-                    <p>Sur lit de purée de céleri-rave <span>40€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Langoustine poêlée</h4>
-                    <p>Purée de patate douce <span>35€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Mijoté de queue de bœuf</h4>
-                    <p>Et riz sauvage aux zests de citron <span>44€</span></p>
-                
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-        </section>
-
-        <!-- Choice of desserts -->
-        <section>
-            <h3>Desserts</h3>
-            <div>
-                <div>
-                    <h4>Macaron noisette et chocolat</h4>
-                    <p>Glace au caramel brun et sel de Guérande <span>18€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Baba au rhum revisité</h4>
-                    <p>Avec son coulis de citron <span>22€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-            <div>
-                <div>
-                    <h4>Tarte de citron meringuée</h4>
-                    <p>Déstructurée <span>23€</span></p>
-                </div>
-                <button type="button" class="menu__check"><i class="fas fa-check-circle"></i></button>
-            </div>
-        </section>
-
-        <!-- Button to order -->
-        <button type="button"> Commander </button>
-
     </main>
 
     <!-- Footer  -->
@@ -132,4 +142,5 @@
     <script src="https://kit.fontawesome.com/1f7aaf7cdc.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
