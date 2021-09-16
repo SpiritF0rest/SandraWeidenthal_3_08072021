@@ -3,3 +3,12 @@
     bottom: 2rem;
     right: 1.4rem;
 }
+
+// main "button" style with primary and secondary color
+.restaurants-btn {
+    background: linear-gradient(175deg, $color-secondary, $color-primary);
+    border-radius: 2rem 2rem;
+    box-shadow: 1px 4px 5px darken($color-base, 25%);
+    color: $color-base;
+    font-weight: 500;
+}
