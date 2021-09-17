@@ -150,10 +150,17 @@
     font-weight: 500;
     list-style: none;
     position: relative;
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+        box-shadow: 1px 4px 9px darken($color-base, 25%);
+    }
     & i {
         color: darken($color-base, 60%);
         font-size: 1.3rem;
         padding: 0 1.5rem 0 0.8rem;
+    }
+    &:hover i {
+        color: $color-primary;
     }
 }
 .list-style__number {
@@ -201,8 +208,14 @@
 .restaurants_card {
     border-radius: 1rem 1rem;
     background-color: $color-base;
-    box-shadow: 4px 4px 9px darken($color-base, 13%) ;
+    box-shadow: 4px 4px 9px darken($color-base, 13%);
     position: relative;
+    &:hover {
+        box-shadow: 4px 4px 9px darken($color-base, 30%);
+    }
+    &:hover .restaurants__description {
+        color: darken($color-primary, 10%); 
+    }
     & img {
     object-fit: cover;
     height: 11rem;
