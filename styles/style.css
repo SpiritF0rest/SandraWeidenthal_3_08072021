@@ -26,7 +26,8 @@ h1 {
   font-size: 2rem;
   font-weight: normal;
   text-align: center;
-  margin: 1rem 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
+  padding-top: 1rem;
 }
 
 .header__menu a {
@@ -80,6 +81,95 @@ footer ul i {
   font-weight: 500;
 }
 
+.loading-spinner__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  animation: loading-spinner 0.1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+.loading-spinner__content {
+  font-family: "Shrikhand", "cursive";
+  font-size: 2rem;
+}
+.loading-spinner__content p {
+  font-size: 3rem;
+  background: linear-gradient(150deg, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.loading-spinner__stars {
+  margin: 1rem 2rem;
+  position: relative;
+}
+
+.loading-stars {
+  position: absolute;
+  margin: 0 1rem;
+  opacity: 0;
+}
+
+.star1 {
+  left: 0;
+  color: #99E2D0;
+  animation: stars-transform 1900ms ease-in-out infinite;
+}
+
+.star2 {
+  left: 3rem;
+  color: #71d7be;
+  animation: stars-transform 1900ms 0.3s ease-in-out infinite;
+}
+
+.star3 {
+  left: 6rem;
+  color: #4acbab;
+  animation: stars-transform 1900ms 0.5s ease-in-out infinite;
+}
+
+.star4 {
+  left: 9rem;
+  color: #32b091;
+  animation: stars-transform 1900ms 0.7s ease-in-out infinite;
+}
+
+.star5 {
+  left: 12rem;
+  color: #278870;
+  animation: stars-transform 1900ms 0.9s ease-in-out infinite;
+}
+
+@keyframes stars-transform {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-spinner {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 .form__city-search {
   background-color: #e6e6e6;
   padding: 1rem 0;

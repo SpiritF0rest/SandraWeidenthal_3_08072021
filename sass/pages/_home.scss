@@ -1,3 +1,86 @@
+// Loading spinner
+.loading-spinner__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    animation: loading-spinner 0.1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+  .loading-spinner__content {
+    font-family: 'Shrikhand', 'cursive';
+    font-size: 2rem;
+    & p {
+    font-size: 3rem;
+    background: linear-gradient(150deg, $color-secondary, $color-primary);
+    background-clip: text; 
+    color: transparent;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    }
+  }
+  .loading-spinner__stars {
+    margin: 1rem 2rem;
+    position: relative;
+  }
+  .loading-stars {
+    position: absolute;  
+    margin: 0 1rem;
+    opacity: 0;
+  }
+  .star1 {
+    left: 0; 
+    color: $color-tertiary;
+    animation: stars-transform 1900ms ease-in-out infinite;
+  }
+  .star2 {
+    left: 3rem;
+    color: darken($color-tertiary, 10%);
+    animation: stars-transform 1900ms 0.3s ease-in-out infinite;    
+  }
+  .star3 {
+    left: 6rem;
+    color: darken($color-tertiary, 20%);
+    animation: stars-transform 1900ms 0.5s ease-in-out infinite;
+  }
+  .star4 {
+    left: 9rem;
+    color: darken($color-tertiary, 30%);
+    animation: stars-transform 1900ms 0.7s ease-in-out infinite;
+  }
+  .star5 {
+    left: 12rem;
+    color: darken($color-tertiary, 40%);
+    animation: stars-transform 1900ms 0.9s ease-in-out infinite;
+  }
+  
+@keyframes stars-transform {
+   0% {
+    transform: scale(0);
+   }
+   80% {
+    opacity: 1;
+    transform: scale(1);
+   }
+   100% {
+    opacity: 0;
+   }
+}
+@keyframes loading-spinner {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
 // Search city section
 
 .form__city-search {
