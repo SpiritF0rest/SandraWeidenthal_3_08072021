@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
-  color: #000;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -10,10 +10,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 a:visited {
-  color: #000;
+  color: black;
 }
 
 h2 {
@@ -71,18 +71,57 @@ footer ul li:hover {
   text-decoration: underline;
 }
 
-.home-btn__heart {
+.btn-heart {
+  border: none;
+  cursor: pointer;
+}
+.btn-heart__home {
+  background-color: white;
   position: absolute;
   bottom: 2rem;
   right: 1.4rem;
 }
+.btn-heart__menu {
+  background-color: whitesmoke;
+  margin: 1rem 1rem 0 0;
+}
+.btn-heart i {
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: -0.7px 0 black, 0 0.7px black, 0.6px 0 black, 0 -0.7px black;
+  opacity: 1;
+  transition: 0.7s cubic-bezier(0.54, -1.04, 0.57, 0.99);
+}
+
+.btn-heart__menu i {
+  color: whitesmoke;
+}
+
+/*.btn-heart i:active {
+    background: linear-gradient(175deg, $color-secondary, $color-primary);
+    background-clip: text; 
+    color: transparent;
+    text-shadow: none;
+    font-size: 1.4rem;
+}*/
+.btn-heart i:hover {
+  background: linear-gradient(175deg, #ff7ad9, #9256dc);
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  font-size: 1.4rem;
+}
 
 .restaurants-btn {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff7ad9, #9256dc);
   border-radius: 2rem 2rem;
   box-shadow: 1px 4px 5px #bfbfbf;
   color: white;
   font-weight: 500;
+}
+.restaurants-btn:hover {
+  background: linear-gradient(175deg, #ff8ade, #9a62df);
+  box-shadow: 1px 4px 5px #a6a6a6;
 }
 
 .loading-spinner__container {
@@ -105,7 +144,7 @@ footer ul li:hover {
 }
 .loading-spinner__content p {
   font-size: 3rem;
-  background: linear-gradient(150deg, #FF79DA, #9356DC);
+  background: linear-gradient(150deg, #ff7ad9, #9256dc);
   background-clip: text;
   color: transparent;
   padding: 0 1rem;
@@ -125,31 +164,31 @@ footer ul li:hover {
 
 .star1 {
   left: 0;
-  color: #99E2D0;
+  color: #98e2cf;
   animation: stars-transform 1900ms ease-in-out infinite;
 }
 
 .star2 {
   left: 3rem;
-  color: #71d7be;
+  color: #70d7bd;
   animation: stars-transform 1900ms 0.3s ease-in-out infinite;
 }
 
 .star3 {
   left: 6rem;
-  color: #4acbab;
+  color: #48cbab;
   animation: stars-transform 1900ms 0.5s ease-in-out infinite;
 }
 
 .star4 {
   left: 9rem;
-  color: #32b091;
+  color: #31af90;
   animation: stars-transform 1900ms 0.7s ease-in-out infinite;
 }
 
 .star5 {
   left: 12rem;
-  color: #278870;
+  color: #26876f;
   animation: stars-transform 1900ms 0.9s ease-in-out infinite;
 }
 
@@ -243,7 +282,7 @@ footer ul li:hover {
   position: relative;
 }
 .main__functioning li:hover {
-  background-color: #f2eafb;
+  background-color: #f1eafb;
   box-shadow: 1px 4px 9px #bfbfbf;
 }
 .main__functioning li i {
@@ -252,14 +291,14 @@ footer ul li:hover {
   padding: 0 1.5rem 0 0.8rem;
 }
 .main__functioning li:hover i {
-  color: #9356DC;
+  color: #9256dc;
 }
 
 .list-style__number {
   position: absolute;
   left: -0.8rem;
   bottom: 1.4rem;
-  background-color: #9356DC;
+  background-color: #9256dc;
   color: white;
   font-weight: 500;
   font-size: 0.9rem;
@@ -282,8 +321,8 @@ footer ul li:hover {
   gap: 1.2rem;
 }
 .restaurants__new {
-  background-color: #99E2D0;
-  color: #278870;
+  background-color: #98e2cf;
+  color: #26876f;
   font-weight: 500;
   font-size: 0.9rem;
   position: absolute;
@@ -307,7 +346,7 @@ footer ul li:hover {
   box-shadow: 4px 4px 9px #b3b3b3;
 }
 .restaurants_card:hover .restaurants__description {
-  color: #782cd3;
+  color: #772bd4;
 }
 .restaurants_card img {
   object-fit: cover;
