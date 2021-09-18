@@ -326,7 +326,7 @@ footer ul li:hover {
 }
 .restaurants__new {
   background-color: #98e2cf;
-  color: #26876f;
+  color: #21735f;
   font-weight: 500;
   font-size: 0.9rem;
   position: absolute;
@@ -403,6 +403,9 @@ footer ul li:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   margin: 2.5rem 0 1rem 0;
+  width: 2.5rem;
+  border-bottom: 3px solid #98e2cf;
+  padding-bottom: 0.3rem;
 }
 
 .dishes__block {
@@ -420,6 +423,14 @@ footer ul li:hover {
   justify-content: space-between;
   padding: 0.6rem;
   overflow: hidden;
+  animation: dishes-come 0.6s ease-in backwards;
+  transition: all 0.1ms ease-in;
+}
+.dishes__unit-block:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dishes__unit-block:nth-child(3) {
+  animation-delay: 0.3s;
 }
 .dishes__unit-block:hover .menu__check {
   margin-right: -0.6rem;
@@ -430,6 +441,16 @@ footer ul li:hover {
   transition: 0.6s ease-in-out;
 }
 
+@keyframes dishes-come {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .dishes__description {
   width: 100%;
   padding-right: 1.4rem;
