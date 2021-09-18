@@ -97,13 +97,6 @@ footer ul li:hover {
   color: whitesmoke;
 }
 
-/*.btn-heart i:active {
-    background: linear-gradient(175deg, $color-secondary, $color-primary);
-    background-clip: text; 
-    color: transparent;
-    text-shadow: none;
-    font-size: 1.4rem;
-}*/
 .btn-heart i:hover {
   background: linear-gradient(175deg, #ff7ad9, #9256dc);
   background-clip: text;
@@ -122,6 +115,17 @@ footer ul li:hover {
 .restaurants-btn:hover {
   background: linear-gradient(175deg, #ff8ade, #9a62df);
   box-shadow: 1px 4px 5px #a6a6a6;
+}
+
+.menu__check {
+  border: none;
+  background-color: #98e2cf;
+  color: white;
+  font-size: 1.3rem;
+  width: 4.8rem;
+  margin: -0.6rem -5.4rem -0.6rem 0;
+  border-radius: 0 1rem 1rem 0;
+  transition: 0.3s ease-in-out;
 }
 
 .loading-spinner__container {
@@ -415,23 +419,47 @@ footer ul li:hover {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.6rem;
+  overflow: hidden;
 }
-.dishes__unit-block > div {
+.dishes__unit-block:hover .menu__check {
+  margin-right: -0.6rem;
+  transition: 0.6s ease-in-out;
+}
+.dishes__unit-block:hover i {
+  transform: rotate(360deg);
+  transition: 0.6s ease-in-out;
+}
+
+.dishes__description {
   width: 100%;
+  padding-right: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.dishes__unit-block h4 {
+.dishes__description-text {
+  overflow: hidden;
+}
+.dishes__description h4 {
   font-size: 1.1rem;
   font-weight: 500;
-  margin: 0.3rem 0;
+  margin: 0.2rem 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.dishes__unit-block p {
+.dishes__description p {
   font-size: 0.9rem;
-  display: flex;
-  justify-content: space-between;
   margin: 0 0 0.2rem 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.dishes__unit-block span {
+
+.dishes__price {
   font-weight: 500;
+  padding: 1.75rem 0 0 1rem;
 }
 
 .restaurants-btn__order {

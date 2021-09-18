@@ -24,13 +24,7 @@
 .btn-heart__menu i {
     color: darken($color-base, 4%);
 }
-/*.btn-heart i:active {
-    background: linear-gradient(175deg, $color-secondary, $color-primary);
-    background-clip: text; 
-    color: transparent;
-    text-shadow: none;
-    font-size: 1.4rem;
-}*/
+
 .btn-heart i:hover {
     background: linear-gradient(175deg, $color-secondary, $color-primary);
     background-clip: text; 
@@ -51,4 +45,17 @@
         background: linear-gradient(175deg, $color-secondary-light, $color-primary-light);
         box-shadow: 1px 4px 5px darken($color-base, 35%);
     }
+}
+
+// Check button
+
+.menu__check {
+    border: none;
+    background-color: $color-tertiary;
+    color: $color-base;
+    font-size: 1.3rem;
+    width: 4.8rem;
+    margin: -0.6rem -5.4rem -0.6rem 0;
+    border-radius: 0 1rem 1rem 0;
+    transition: 0.3s ease-in-out;
 }
