@@ -233,3 +233,47 @@
 .restaurants__description h3, .restaurants__description p {
     margin: 0.3rem 0 0 0; 
 }
+
+// Media query Medium
+
+@media screen and (min-width: 600px) {
+    .main__functioning, .restaurants h2, footer {
+        text-align: center;
+    }
+    .main__functioning h2, .restaurants h2 {
+        margin: 0 0 2.5rem 0;
+    }
+    .main__functioning {
+        padding-top: 2.5rem;
+    }
+    .main__functioning ol {
+        margin: auto;
+        width: max-content;
+    }
+    .restaurants {
+        padding-top: 2.5rem;
+    }
+    .restaurants__showcase {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+}
+
+// Media Queries Desktop
+
+@media screen and (min-width: 998px) {
+    .main__functioning ol {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        grid-template-rows: none;
+    }
+    .restaurants__showcase {
+        margin: auto;
+    }
+    .restaurants_card {
+        max-width: 40rem;
+        min-width: 28rem;
+    }
+}

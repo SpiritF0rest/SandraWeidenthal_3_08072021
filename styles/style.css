@@ -74,16 +74,18 @@ footer ul li:hover {
 .btn-heart {
   border: none;
   cursor: pointer;
+  height: 2rem;
+  width: 2.2rem;
 }
 .btn-heart__home {
   background-color: white;
   position: absolute;
-  bottom: 2rem;
-  right: 1.4rem;
+  bottom: 1.6rem;
+  right: 1.1rem;
 }
 .btn-heart__menu {
   background-color: whitesmoke;
-  margin: 1rem 1rem 0 0;
+  margin: 1.2rem 1rem 0 0;
 }
 .btn-heart i {
   font-size: 1.3rem;
@@ -101,8 +103,8 @@ footer ul li:hover {
   background: linear-gradient(175deg, #ff7ad9, #9256dc);
   background-clip: text;
   color: transparent;
-  text-shadow: none;
-  font-size: 1.4rem;
+  text-shadow: -0.7px 0 transparent, 0 0.7px transparent, 0.6px 0 transparent, 0 -0.7px transparent;
+  font-size: 1.5rem;
 }
 
 .restaurants-btn {
@@ -371,6 +373,50 @@ footer ul li:hover {
   margin: 0.3rem 0 0 0;
 }
 
+@media screen and (min-width: 600px) {
+  .main__functioning, .restaurants h2, footer {
+    text-align: center;
+  }
+
+  .main__functioning h2, .restaurants h2 {
+    margin: 0 0 2.5rem 0;
+  }
+
+  .main__functioning {
+    padding-top: 2.5rem;
+  }
+
+  .main__functioning ol {
+    margin: auto;
+    width: max-content;
+  }
+
+  .restaurants {
+    padding-top: 2.5rem;
+  }
+
+  .restaurants__showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 998px) {
+  .main__functioning ol {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    grid-template-rows: none;
+  }
+
+  .restaurants__showcase {
+    margin: auto;
+  }
+
+  .restaurants_card {
+    max-width: 40rem;
+    min-width: 28rem;
+  }
+}
 .menu__main-img img {
   height: 16.5rem;
   object-fit: cover;
@@ -489,6 +535,66 @@ footer ul li:hover {
   margin: 3rem auto 4rem auto;
   padding: 1rem 3rem;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header__menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__menu a {
+    position: static;
+    align-self: center;
+    margin: 0.5rem 5rem 0 -5rem;
+  }
+
+  .menu__main-block {
+    border-radius: 0 0;
+  }
+
+  .menu__main-title {
+    justify-content: space-evenly;
+  }
+
+  .menu__main-block h3 {
+    width: 70%;
+    margin: 2.5rem auto 1.5rem auto;
+  }
+
+  .dishes__block {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 998px) {
+  .menu__main-block {
+    background-color: white;
+  }
+
+  .menu__main-title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-heart__menu {
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  .btn-heart__menu i {
+    color: white;
+  }
+
+  .dishes__block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .dishes__unit-block {
+    background-color: whitesmoke;
+    box-shadow: 1px 4px 9px #cccccc;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

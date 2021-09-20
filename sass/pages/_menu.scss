@@ -51,7 +51,7 @@
 .dishes__unit-block {
     background-color: $color-base;
     border-radius: 1rem 1rem;
-    box-shadow: 1px 4px 9px #d9d9d9;
+    box-shadow: 1px 4px 9px darken($color-base, 15%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,4 +123,59 @@
     margin: 3rem auto 4rem auto;
     padding: 1rem 3rem;
     font-size: $font-normal;
+}
+
+// Media query Medium
+
+@media screen and (min-width: 600px) {
+    .header__menu {
+        display: flex;
+        justify-content: center;
+    }
+    .header__menu a {
+        position: static;
+        align-self: center;
+        margin: 0.5rem 5rem 0 -5rem;
+    }
+    .menu__main-block {
+        border-radius: 0 0;
+    }
+    .menu__main-title {
+        justify-content: space-evenly;
+    }
+    .menu__main-block h3 {
+        width: 70%;
+        margin: 2.5rem auto 1.5rem auto;
+    }
+    .dishes__block {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+// Media Queries Desktop
+
+@media screen and (min-width: 998px) {
+    .menu__main-block {
+        background-color: $color-base;
+    }
+    .menu__main-title {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-heart__menu {
+        margin: 0 auto;
+        background-color: $color-base;
+    }
+    .btn-heart__menu i {
+        color: $color-base;
+    }
+    .dishes__block {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .dishes__unit-block {
+        @include primary-background-color;
+        box-shadow: 1px 4px 9px darken($color-base, 20%);
+    }
 }

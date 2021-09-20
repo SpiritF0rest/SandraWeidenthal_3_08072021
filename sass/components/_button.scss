@@ -2,15 +2,17 @@
 .btn-heart {
     border: none; 
     cursor: pointer;
+    height: 2rem;
+    width: 2.2rem;
     &__home {
         background-color: $color-base;
         position: absolute;
-        bottom: 2rem;
-        right: 1.4rem;
+        bottom: 1.6rem;
+        right: 1.1rem;
     }
     &__menu {
         @include primary-background-color;
-        margin: 1rem 1rem 0 0;
+        margin: 1.2rem 1rem 0 0;
 
     }
     & i {
@@ -29,8 +31,8 @@
     background: linear-gradient(175deg, $color-secondary, $color-primary);
     background-clip: text; 
     color: transparent;
-    text-shadow: none;
-    font-size: 1.4rem;
+    text-shadow: -0.7px 0 transparent, 0 0.7px transparent, 0.6px 0 transparent, 0 -0.7px transparent;
+    font-size: 1.5rem;
 }
 
 
