@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./styles/style.css"
+    "sass": "sass --watch ./sass/main.scss:./styles/style.css --style compressed",
+    "prefix": "postcss ./styles/style.css --use autoprefixer -d ./styles/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "SpiritF0rest",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/SpiritF0rest/SandraWeidenthal_3_08072021/issues"
   },
